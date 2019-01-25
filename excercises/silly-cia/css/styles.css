@@ -1,0 +1,26 @@
+
+p{
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.headline{
+    color: darkgreen;
+}
+.sub-headline, .headline{
+    font-family: Georgia;
+    text-align: center;
+}
+.main-image{
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: .5rem;
+}
+.also-like{
+    text-transform: uppercase;
+}
