@@ -1,0 +1,29 @@
+*{
+    font-family: sans-serif;
+}
+.top-image{
+    width: 100%;
+    height: auto;
+}
+.hello-top{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-bottom: 1rem;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+.item-one {
+    background-color: pink;
+}
+.item-two {
+    background-color: lightblue;
+}
+.item-three{
+    background-color: orange;
+}
