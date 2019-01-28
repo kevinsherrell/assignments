@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four{
+    height: 8rem;
+    border: 4px solid white;
+}
+.row-one {
+    width: 100%;
+    background-color: #F5C6D6;
+}
+
+.column-fourth {
+    min-width: 25%;
+    background-color: #EE2E84;
+}
+
+.column-half {
+    min-width: 50%;
+    background-color: #85CFD8;
+}
+
+.column-three-fourth {
+    min-width: 75%;
+    background-color: #8DC63F;
+}
+
+/* display */
+
+.display-i-b {
+    display: inline-block;
+}
