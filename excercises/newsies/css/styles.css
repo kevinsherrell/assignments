@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* HEADER  */
+
+header {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.line-one,
+.line-two {
+    /* border-bottom: 1px solid black; */
+    padding-bottom: .5rem;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+
+.line-one {
+    /* text-align: right; */
+}
+
+.line-two {
+    /* text-align: left; */
+}
+
+.middle-top {
+    min-width: 5%;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    /* background-color: orange; */
+}
+
+.header-container{
+    padding-left: .75rem;
+    border-bottom: 1px solid rgb(226, 221, 221);
+}
+
+.header-middle-star {
+    width: 4.1rem;
+    margin-bottom: -.5rem;
+}
+.header-time-date{
+    width: 78%;
+    text-align: right;
+}
+/* MAIN */
+
+main {
+    /* background-color: pink; */
+    height: 100vh;
+}
+
+.sidebar-left,
+.sidebar-right{
+    width: 15%;
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    vertical-align: top;
+
+}
+.main-inner-container{
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.front-page-story{
+    width: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* background-color: blue; */
+}
+.front-page-headline {
+    text-align: center;
+}
+
+.front-page-sub-headline {
+    text-align: center;
+}
+.alien-image{
+    width: 100%;
+    padding: -24.359px;
+    object-fit: cover;
+}
+/* POSITIONING MODIFIERS*/
+
+.display-i-b {
+    display: inline-block;
+}
+
+.display-b {
+    display: block;
+}
+
+/* BORDERS */
+        /* all borders should be added here for reuse */
+.reg-border-right{
+    border-right: 1px solid black;
+}
+.reg-border-left{
+    border-left: 1px solid black;
+}
+.reg-border-top{
+    border-top: 1px solid black;
+}
+.reg-border-bottom{
+    border-bottom: 1px solid black;
+}

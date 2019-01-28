@@ -3,6 +3,7 @@ var shopper = {
     lastName: "Sherrell",
     myAge: 32,
     birthState: "Mississippi",
+    isMale: true,
     completeInfo: 
     function(){
         return "Hi, I am " + shopper.firstName + " " + shopper.lastName + ". " + "I am " + shopper.myAge + " " + "and I was born in " + shopper.birthState + "!";
