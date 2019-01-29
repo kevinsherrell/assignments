@@ -3,7 +3,7 @@ This code contains only syntax and code style problems. The logic of the code wo
 so DO NOT change the functionality of anything in here.
 
 In short, you shouldn't need to add your own statements anywhere,
-just fix the existing ones.
+just fix the existing ones..../
 */
 
 
@@ -22,13 +22,13 @@ function whoWins(isThereKryptonite, enemyName) {
 }
 
 for (var i = 0; i < Enemies.length; i++) {
-    var isThereKryptonite = function(){
+    var isThereKryptonite = function () {
         if (i % 2 === 0) {
-        isThereKryptonite = true;
-    } else {
-        isThereKryptonite = false;
+            isThereKryptonite = true;
+        } else {
+            isThereKryptonite = false;
+        }
     }
-}
     console.log(whoWins(isThereKryptonite, Enemies[i]));
 }
 
