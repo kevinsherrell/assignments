@@ -18,17 +18,17 @@ for (i = 0; i < fruit.length; i++) {
 // BRONZE MEDAL
 // Write a for loop that will push the numbers 0 though 9 to an array. 
 var arr = [];
-for(var i = 0 ;arr.length < 10 ; i++){
+for (var i = 0; arr.length < 10; i++) {
     arr.push(i)
     console.log(arr)
 }
 // Write a for loop that prints to the console only even numbers 0 though 100.
-for(var i = 0; i < 101; i += 2){
+for (var i = 0; i < 101; i += 2) {
     console.log(i)
 }
 // Write a for loop that will push every other fruit to an array. var fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
 var fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
-for(i = 1; i < fruit.length; i += 2){
+for (i = 1; i < fruit.length; i += 2) {
     console.log(fruit[i])
 }
 // SILVER MEDAL
@@ -43,18 +43,37 @@ var peopleArray = [
         occupation: "Singer",
     },
     {
-        name: "Vladimir Putin", 
+        name: "Vladimir Putin",
         occupation: "Politician",
     },
     {
-        name: "Opra",
+        name: "Oprah",
         occupation: "Entertainer",
     }
 ]
-console.log(peopleArray[1].name)
-
-
-// console.log(peopleArray.keys(peopleArray));
+for (i = 0; i < peopleArray.length; i++) {
+    console.log(peopleArray[i].name)
+}
 // Write a loop that pushes the names into a names array, and the occupations into an occupations array.
-// Write a loop that pushes every other name to an array starting with "Harrison Ford", and every other occupation to another array starting with "Singer".
 
+var names = [];
+for(var i = 0; i < peopleArray.length; i++){
+    names.push(peopleArray[i].name)
+    console.log(names)
+}
+
+// Write a loop that pushes every other name to an array starting with "Harrison Ford", and every other occupation to another array starting with "Singer".
+var names = [];
+var occupation = [];
+
+for (var i = 0; i < peopleArray.length; i++) {
+    if (i % 2 === 0) {
+        names.push(peopleArray[i].name)
+        console.log(names)
+    } 
+    else{
+        occupation.push(peopleArray[i].occupation)
+        console.log(occupation)
+    }
+      
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    width: 100%;
+}
+
+/* LAYOUT */
+
+.full {
+    width: 100%;
+}
+
+.three-fourth {
+    width: 75%;
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33.33%;
+}
+
+.fourth {
+    width: 25%;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+    background-color: pink;
+}
+
+/*  */
+
+.star-image {
+    max-width: 2rem;
+}
+
+.header-container {
+    white-space: nowrap;
+}
+/*  */
+.logo-middle{
+    text-align: center;
+}
+/* element type */
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
