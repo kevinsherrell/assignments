@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+    line-height: 0px;
+}
+.france{
+    width: 50%;
+    height: 6rem;
+}
+.france-left,
+.france-right,
+.france-mid{
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+}
+.france-left{
+    background-color: blue;
+}
+.france-mid{
+    background-color: white;
+}
+.france-right{
+    background-color: red;
+}
+.germany{
+    display: inline-block;
+    width: 50%;
+    height: 6rem;
+}
+.germany-top,
+.germany-mid,
+.germany-bottom{
+    width: 100%;
+    height: 33.33%;
+}
+.germany-top{
+    background-color: black;
+}
+.germany-mid{
+    background-color: red;
+}
+.germany-bottom{
+    background-color: gold;
+}
+
+.madagascar{
+    width: 50%;
+    height: 6rem;
+}
+.madagascar-left{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.madagascar-right-top{
+    display: inline-block;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+.madagascar-right-bottom{
+    display: inline-block;
+    background-color: green;
+    width: 50%;
+    height: 50%;
+}
+
