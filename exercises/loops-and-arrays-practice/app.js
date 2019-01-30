@@ -1,7 +1,8 @@
 // Loop through the following array and count how many "computers" there are. Log the final count:
+
 var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"];
 var computers = [];
-for(i = 0; i < officeItems.length; i++){
+for(var i = 0; i < officeItems.length; i++){
     if(officeItems[i] === "computer"){
         computers.push(officeItems[i]);
         console.log(computers.length)
@@ -33,12 +34,23 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
       gender: "female"
     }
   ] 
-for(i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
     if(peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18){
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " Old enough to see Mad Max")
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " old enough to see Mad Max")
     }
     else{
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " Not old enough to see Mad Max")
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " not old enough to see Mad Max")
     }
+}
+
+for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+  if(peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "male" && peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18){
+    console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " old enough. HE'S good to see Mad Max Fury Road.")
+  }else if(peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "female" && peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18){
+    console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " old enough. SHE's good to see Mad Max Fury Road.")
+  }
+  else{
+    console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is" + " not old enough to see Mad Max.")
+  }
 }
 
