@@ -1,29 +1,33 @@
 // Make a function that will return any given string into all caps followed by the same string all lowercase.
-function capitalizeAndLowerCase(a){
+function capitalizeAndLowerCase(a) {
     return a.toUpperCase() + a.toLowerCase()
 }
-console.log(capitalizeAndLowerCase("whats up"))
-
+console.log(capitalizeAndLowerCase("Hello"))
 // Make a function that returns a number half the length, and rounded down. You'll need to use Math.floor().
-function findMiddleIndex(a){
-    return Math.floor(a.length / 2)
+function findMiddleIndex(b) {
+    return Math.floor(b.length / 2)
 }
 console.log(findMiddleIndex("Hello"))
+console.log("__________________________________")
+
 
 // Make a function that uses slice() and the other functions you've written to return the first half of the string
-// function returnFirstHalf(a){
-//     return a.slice(0, a.length / 2)
-// }
-// console.log(returnFirstHalf("Hello"))
+function returnFirstHalf(c) {
+    return c.slice(0, c.length / 2)
+}
+console.log(returnFirstHalf("Hello"))
+console.log("__________________________________")
+
 
 // Make a function that takes a string and returns that string where the first half is capitalized, and the second half is lower cased. (If the string length is odd, capitalize the shorter of the first half.)
 
-function capitalizeAndLowerCase(a){
-    if(a.length % 2 === 0){
-        return  a.slice(a.length / 2, 0).toLowerCase()
+function bigHalfLittleHalf(a) {
+    if (a.length % 2 === 0) {
+        return a.slice(0, a.length / 2).toUpperCase() + a.slice(a.length / 2, a.length).toLowerCase()
     }
-    // else{
-    //     return
-    // }
+
+    else {
+        return a.slice(0, Math.floor(a.length / 2)).toUpperCase() + a.slice(a.length / 2, a.length).toLowerCase()
+    }
 }
-console.log(capitalizeAndLowerCase("Hell"))
+console.log(bigHalfLittleHalf("This function uppercases the first half of a string"))
