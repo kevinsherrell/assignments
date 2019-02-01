@@ -1,19 +1,19 @@
 var user = {
-    name: "Kevin Sherrell",
+    name: "john doe",
     age: 32,
     occupation: "software developer",
-    birthdate: "10/28/1986",
+    birthdate: "10/28/1975",
     homeTown: {
-        city: "Belleville",
-        state: "Illinois",
-        zip: "62223"
+        city: "louisville",
+        state: "kentucky",
+        zip: "40018"
     },
     certifications: 
         {
             certName: "Microsoft Certified Technology Specialist",
             exam: "70-680",
             examDetails: {
-                testingCenter: "Community College of Denver",
+                testingCenter: "Louisville Community College",
                 testingDate: {
                     month: "January",
                     year: 2016
