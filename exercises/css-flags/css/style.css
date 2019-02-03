@@ -1,22 +1,31 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;    
 }
+
 .container{
     max-width: 85%;
     margin: auto;
-    line-height: 0px;
+    white-space: nowrap;
 }
-.france{
-    width: 50%;
-    height: 6rem;
-}
-.france-left,
-.france-right,
-.france-mid{
+
+/* layout */
+
+.column-third {
+    width: 33%;
+    height: 266px;
     display: inline-block;
+    /* background-color: pink; */
+    border: 1px solid black;
+}
+/* france */
+.france{
     width: 33.33%;
     height: 100%;
+    /* background-color: pink; */
 }
 .france-left{
     background-color: blue;
@@ -27,16 +36,10 @@
 .france-right{
     background-color: red;
 }
+/* germany */
 .germany{
-    display: inline-block;
-    width: 50%;
-    height: 6rem;
-}
-.germany-top,
-.germany-mid,
-.germany-bottom{
     width: 100%;
-    height: 33.33%;
+    height: 33%;
 }
 .germany-top{
     background-color: black;
@@ -47,27 +50,110 @@
 .germany-bottom{
     background-color: gold;
 }
-
-.madagascar{
-    width: 50%;
-    height: 6rem;
-}
+/* madagascar */
 .madagascar-left{
-    background-color: white;
-    width: 50%;
+    width: 33.33%;
     height: 100%;
-    float: left;
+    margin-right: 0;
+    background-color: white;
+}
+.madagascar-right{
+    width: 66.66%;
+    height: 100%;
 }
 .madagascar-right-top{
-    display: inline-block;
-    background-color: red;
-    width: 50%;
+    width: 100%;
     height: 50%;
+    background-color: red;
 }
 .madagascar-right-bottom{
-    display: inline-block;
-    background-color: green;
-    width: 50%;
+    width: 100%;
     height: 50%;
+    background-color: green;
 }
+/* switzerland */
 
+/* switzerland top */
+
+.switzerland-top{
+    height: 37.5%;
+}
+.switzerland-top-left{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+.switzerland-top-mid{
+    width: 20%;
+    height: 100%;
+}
+.switzerland-top-mid-top{
+    width: 100%;
+    height: 40%;
+    background-color: red;
+}
+.switzerland-top-mid-bottom{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+}
+.switzerland-top-right{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+/* switzerland mid */
+.switzerland-mid{
+    height: 25%;
+}
+.switzerland-mid-1{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+}
+.switzerland-mid-2{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+.switzerland-mid-3{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+}
+/* switzerland bottom */
+.switzerland-bottom{
+    height: 37.5%;
+}
+.switzerland-bottom-left{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+.switzerland-bottom-mid{
+    width: 20%;
+    height: 100%;
+}
+.switzerland-bottom-mid-bottom{
+    width: 100%;
+    height: 40%;
+    background-color: red;
+}
+.switzerland-bottom-mid-top{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+}
+.switzerland-bottom-right{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+.i-b{
+    display: inline-block;
+}
+.title{
+    display: inline-block;
+    width: 33%;
+    
+}
