@@ -9,6 +9,9 @@ header{
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
+header h4{
+    font-weight: 100;
+}
 .container{
     max-width: 85%;
     margin: auto;
