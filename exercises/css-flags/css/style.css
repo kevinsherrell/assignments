@@ -5,7 +5,10 @@
     font-family: sans-serif;
     text-decoration: none;    
 }
-
+header{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
 .container{
     max-width: 85%;
     margin: auto;
@@ -324,4 +327,7 @@
 }
 .no-wrap{
     white-space: nowrap;
+}
+.center{
+    text-align: center;
 }
