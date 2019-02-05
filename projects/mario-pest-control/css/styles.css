@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: gold;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* HEADER */
+header{
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+.header-container{
+    max-width: 85%;
+
+    margin: auto;
+}
+.logo{
+    text-align: center;
+}
+.sub-header{
+    padding-top: 5%;
+    margin-left: 14%;
+    margin-right: 14%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: .5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+}
+/* header images */
+.logo-image{
+    padding-top: 20%;
+    max-width: 60%;
+    height: auto;
+    display: inline-block;
+}
+.mario-image{
+    max-width: 25%;
+    height: auto;
+    display: inline-block;
+}
+/* --------- */
+/* MAIN */
+.container{
+    max-width: 95%;
+    margin: auto;
+}
+.make-your-selection{
+    text-align: center;
+    font-weight: 300;
+}
+.goombah{
+    max-width: 100%;
+    height: 150px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+
+}
+.bob-omb{
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+.cheep-cheep{
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+.goombah,
+.bob-omb,
+.cheep-cheep{
+    border-radius: 18px;
+    box-shadow: .09px 10px 75px -8px lightgray;
+}
+.goombah-left{
+    display: inline-block;
+    max-width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+.goombah-right{
+    width: 55%;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+.goombah-input{
+    position: relative;
+    bottom: 10px;
+    width: 50%;
+    height: 50%;
+    margin-top: 2rem;
+    border: .5px solid rgba(0,0,0,.2);
+    border-radius: 15px;
+    font-size: 2.6rem;
+    text-align: center;
+    
+
+}
+.bob-omb-left{
+    display: inline-block;
+    max-width: 55%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.bob-omb-right{
+    max-width: 45%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    text-align: right;
+}
+.bob-omb-input{
+    position: relative;
+    bottom: 10px;
+    width: 50%;
+    height: 50%;
+    margin-top: 2rem;
+    border: .5px solid rgba(0,0,0,.2);
+    border-radius: 15px;
+    font-size: 2.6rem;
+    text-align: center;
+
+}
+.cheep-cheep-left{
+    display: inline-block;
+    max-width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+.cheep-cheep-right{
+    width: 55%;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+.cheep-cheep-input{
+    position: relative;
+    bottom: 10px;
+    width: 50%;
+    height: 50%;
+    margin-top: 2rem;
+    border: .5px solid rgba(0,0,0,.2);
+    border-radius: 15px;
+    font-size: 2.6rem;
+    text-align: center;
+
+}
+.yoshi-total{
+    width: 40%;
+    height: 200px;
+    /* background-color: pink; */
+    display: inline-block;
+}
+
+.cost{
+    position: relative;
+    top: 1rem;
+    text-transform: uppercase;
+}
+.how-many{
+    font-size: .8rem;
+}
+.total{
+    width: 60%;
+    height: 200px;
+    /* background-color: orange; */
+    display: inline-block;
+}
+
+/* images */
+.goombah-image{
+    width: 40%;
+    height: auto;
+
+    margin-left: 2.45rem;
+    margin-top: 2rem;
+    
+}
+.bob-omb .bob-omb-image{
+    width: 60%;
+    height: auto;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    /* float: right; */
+
+}
+
+.cheep-cheep-image{
+    width: 60%;
+    height: auto;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.yoshi-image{
+    width: 85%;
+    height: auto;
+}
+/* ___________ */

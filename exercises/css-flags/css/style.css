@@ -481,3 +481,39 @@ h1 span{
     width: 100%;
     background-color: white;
 }
+/* niger */
+.niger-top{
+    width: 100%;
+    height: 33.33%;
+    background-color: #e05206;
+}
+.niger-mid{
+    width: 100%;
+    height: 33.33%;
+}
+.niger-mid-left{
+    width: 33.33%;
+    height: 100%;
+}
+.niger-mid-mid{
+    width: 33.33%;
+    height: 100%;
+}
+.niger-mid-circle{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    background-color: #e05206;
+}
+.niger-mid-right{
+    width: 33.33%;
+    height: 100%;
+}
+.niger-bottom{
+    width: 100%;
+    height:33.33%;
+    background-color: #0ab02a;
+}
