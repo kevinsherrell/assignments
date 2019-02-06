@@ -20,15 +20,15 @@
         <form id="mario-form" name="mario-form" action="https://www.vschool.io">
             <div class="container">
                 <section class="goombah">
-                    <div class="goombah-left"><img src="img/goombah.png" alt="goombah" class="goombah-image"><p class="goombah-name">Goombah</p></div><div class="goombah-right"><p class="cost">5 Coins</p><input name="goombah" type="number" max="9999" maxlength="4" class="goombah-input"><p class="how-many">How many Goombahs?</p></div>
+                    <div class="goombah-left"><img src="img/goombah.png" alt="goombah" class="goombah-image"><p class="goombah-name">Goombah</p></div><div class="goombah-right"><p class="cost">5 Coins</p><input id="goombah" name="goombah" type="number" max="9999" maxlength="4" class="goombah-input"><p class="how-many">How many Goombahs?</p></div>
                 </section>
                 <section class="bob-omb">
-                    <div class="bob-omb-left"><p class="cost">7 Coins</p><input id="bob-omb" name="bob-omb" type="number" max="9999" maxlength="4 class="bob-omb-input"><p class="how-many">How many Bob-Ombs?</p></div><div class="bob-omb-right"><img src="img/bob-omb.png" alt="bobomb-image" class="bob-omb-image"><p class="bob-omb-name">Bob-omb</p></div>
+                    <div class="bob-omb-left"><p class="cost">7 Coins</p><input id="bob-omb" name="bob-omb" type="number" max="9999" maxlength="4" class="bob-omb-input"><p class="how-many">How many Bob-Ombs?</p></div><div class="bob-omb-right"><img src="img/bob-omb.png" alt="bobomb-image" class="bob-omb-image"><p class="bob-omb-name">Bob-omb</p></div>
                 </section>
                 <section class="cheep-cheep">
                     <div class="cheep-cheep-left"><img src="img/cheep-cheep.png" alt="cheep-cheep" class="cheep-cheep-image"><p class="cheep-cheep-name">Cheep-cheep</p></div><div class="cheep-cheep-right"><p class="cost">11 Coins</p><input id="cheep-cheep" name="cheep-cheep" type="number" max="9999" maxlength="4" class="cheep-cheep-input"><p class="how-many">How many Cheep-Cheeps?</p></div>
                 </section>
-                </div><div class="total"></div><div class="yoshi-total"><a href="#" id="yoshi-button"><img src="img/yoshi.png" alt="yoshi" class="yoshi-image"></a>
+                </div><div id="total-price" class="total"><p  id="calculation" class="calculation">0 Coins</p></div><div class="yoshi-total"><a href="#" id="yoshi-button"><img src="img/yoshi.png" alt="yoshi" class="yoshi-image"></a>
             </div>
            
         </form>
