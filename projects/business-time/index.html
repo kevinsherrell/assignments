@@ -7,50 +7,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-            <nav id="top-nav row-parent">
-                <ul class="row-parent">
-                    <li class="nav-links flex-item fl-center"><a href="#">Label Pro</a></li>
-                    <!-- <li class="nav-links flex-item fl-center"><a href="#">About</a></li> -->
-                    <!-- <li class="nav-links flex-item fl-center"><a href="#">Contact</a></li> -->
-                    <!-- <li class="nav-links flex-item fl-center"><a href="#">Sign Up</a></li> -->
-                    <!-- <li class="nav-links flex-item fl-center"><a href="#">Login</a></li> -->
-                    <li class="hamburger">
-                        <div class="ham-bar"></div>
-                        <div class="ham-bar"></div>
-                        <div class="ham-bar"></div>
-                    </li>
-                </ul>
-            </nav>
-            <div class=" hero-text">
-                <h1 class="title">Label Pro</h1>
-                <h3 class="sub-title">Everything you need to manage your label</h3>
-                <button class="download">Download Now</button>
-            </div>
-            <!-- <section class="hero">
-                <h1 class="hero-header">Producer Connect</h1>
-            </section> -->
+        <nav id="top-nav">
+            <ul>
+                <li class="nav-links logo"><a href="#">Label Pro</a></li>
+                <li id="hamburger" class="hamburger">
+                    <img src="img/hamburger.svg" alt="hamburger" class="ham">
+                </li>
+            </ul>
+        </nav>
+        <nav id="hiddenNav" class="hidden-nav">
+            <ul>
+                <li class="hidden-nav-links">Home</li>
+                <li class="hidden-nav-links">About</li>
+                <li class="hidden-nav-links">Contact</li>
+                <li class="hidden-nav-links">Sign Up</li>
+            </ul>
+        </nav>
+
     </header>
+   
+    <div id="hero">
+        <div class="hero-text">
+            <h1 class="title">Label Pro</h1>
+            <h3 class="sub-title">Everything you need to manage your label</h3>
+            <button class="download">Download Now</button>
+        </div>
+    </div>
+
     <main>
         <div class="container">
-            <section class="section-1">
-                <!-- up to date statistics: 
-                get realtime data on streams and downloads. Zero in on your target market and maximize profitability. -->
+
+            <section class="main-section">
+
+                <div class="distro-text">
+                    <h3 class="section-3-header">Streamlined Distribution</h3>
+                    <p class="section-content">We streamline the process of getting your best music onto all major music
+                        platforms!</p>
+                </div>
+                <div class="distro-images">
+                    <img src="img/apple-itunes.png" alt="itunes" class="itunes-image">
+                    <img src="img/apple-music.png" alt="applemusic" class="apple-music-image">
+                    <img src="img/deezer.png" alt="deezer" class="deezer-image">
+                    <img src="img/More.png" alt="tidal" class="tidal-image">
+                </div>
             </section>
-            <section class="section-2">
-                <!-- Customizable Contracts:
-                With label pro you get custom contracts for every scenario! -->
+            <section id="stats" class="main-section">
+
+                <div class="stats-icon">
+                    <i class="fas fa-chart-line section-icons"></i>
+                </div>
+                <h3 class="section-1-header">Real Time Statistics</h3>
+                <div>
+
+                    <div class="stats-text">
+                        <p>Get real time data on streams and downloads. Zero in on your target market
+                            and maximize profitability</p>
+                    </div>
+                </div>
             </section>
-            <section class="section-3">
-                <!-- Streamlined Distribution:
-                We streamline the process of getting you best music onto all major music platforms. -->
+            <section id="contract" class="main-section">
+
+                <div class="contract-icon"><i class="fas fa-file-signature section-icons"></i></div>
+
+                <h3 class="section-2-header">Customizable Contracts</h3>
+                <div>
+                    <div class="contract-text">
+                        <p class="section-content">With Label Pro you get custom contracts for every scenario!</p>
+                    </div>
+                </div>
             </section>
+
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy KMS Software Inc.</p>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
