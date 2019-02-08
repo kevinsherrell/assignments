@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+input{
+    width: 35%;
+    height: 4rem;
+    font-size: 1.1rem;
+    border: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+button{
+    width: 30%;
+    border: none;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+/* --------------------LAYOUT-------------------- */
+.flex-row{
+    display: flex;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+/* ---------------------------------------------- */
+/* -------------------FORM------------------------ */
+.addition-button{
+    background-color: pink;
+}
+.subtraction-button{
+    background-color: lightblue
+}
+.multiplication-button{
+    background-color: orange;
+}
+.results{
+    width: 100%;
+    height: 90px;
+    background-color: pink;
+    text-align: right;
+}
+.result-box{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    padding: 4rem 0 0;
+    font-size: 2rem;
+}
+/* ------------------------------------------------ */
