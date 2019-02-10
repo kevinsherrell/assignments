@@ -23,23 +23,13 @@ function lyricsReversed() {
 
 function everyOtherWord() {
   var newArr = []
-  for (i = 0; i < lyrics.length; i += 2) {
-    newArr.push(lyrics[i])
-  }
-  return newArr.join(" ")
-
-}
-// console.log(everyOtherWord())
-
-function everyOtherTwoSwitched() {
-  var  resultArr = []
-  for (var i = 0; i < lyrics.length; i += 2) {
-    resultArr.push(lyrics[i+1])
-    resultArr.push(lyrics[i])
-    if(resultArr[i]===undefined){
-      resultArr.splice(i,1)
+  for (i = 0; i < lyrics.length; i++) {
+    if(newArr.indexOf(i) === -1){
+        newArr.push(lyrics[Math.floor(Math.random() * lyrics.length) + 1])
     }
   }
-  return resultArr
+  return newArr.join(' ')
+
 }
-console.log(everyOtherTwoSwitched())
+console.log(everyOtherWord())
+
