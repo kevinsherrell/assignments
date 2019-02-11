@@ -1,5 +1,11 @@
 var ask = require("readline-sync");
+
+
+
 var gameOver = false
+var endBattle = false
+
+var inventory = []
 
 // --------------------------------------------------------------
 // WEAPONS
@@ -35,22 +41,23 @@ var bronzeBangle = new Armor('Bronze Bangle', 8, 0, 0, 0, 0)
 // CHARACTERS
 // --------------------------------------------------------------
 
-function Character(cName, level, hp, exp, weapon, armor) {
+function Character(cName, level, hp, exp, weapon, armor, inventory) {
     this.name = cName
     this.level = level
     this.hp = hp
     this.exp = exp
     this.weapon = weapon
     this.armor = armor
+    this.inventoruy = inventory
 }
 Character.prototype.attack = function () {
     var damage = (this.weapon.attack / 100) * Math.floor(Math.random() * 33) + 1
     return Math.floor(damage)
 }
 
-var cloud = new Character('Cloud Strife', 1, 45, 0, busterSword, bronzeBangle)
-var tifa = new Character('Tifa Lockhart', 1, 38, 0, leatherKnuckles, bronzeBangle)
-var barret = new Character('Barret Wallace', 1, 54, 0, gatlingGun, bronzeBangle)
+var cloud = new Character('Cloud Strife', 1, 45, 0, busterSword, bronzeBangle, inventory)
+var tifa = new Character('Tifa Lockhart', 1, 38, 0, leatherKnuckles, bronzeBangle,inventory)
+var barret = new Character('Barret Wallace', 1, 54, 0, gatlingGun, bronzeBangle,inventory)
 var characterOptions = [cloud.name, tifa.name, barret.name]
 
 function switchCharacter() {
@@ -87,8 +94,9 @@ function Enemy(eName, level, hp, attackValue, defense, magicAttack, magicDefense
     this.win = item
 }
 Enemy.prototype.attack = function () {
-    var damage = 3
-    // (this.attack / 100) * Math.floor(Math.random() * 33) + 1
+    var damage = Math.floor(Math.random() * this.attackValue) + 1
+    // console.log("You have inflicted " + damage + " points of damage")
+
     return Math.floor(damage)
 }
 
@@ -100,13 +108,14 @@ var guardDog = new Enemy('Guard-Dog', 3, 42, 8, 4, 2, 2, 20, 'ether')
 
 
 
-
+// console.log(monoDrive)
 
 // --------------------------------------------------------------
 // WALKING
 // --------------------------------------------------------------
 
 function walk() {
+    endBattle = false
     console.log('You are walking')
     var encounterChance = Math.floor(Math.random() * 4) + 1
     var enemyOption = [militaryPolice, monoDrive, guardDog]
@@ -117,22 +126,61 @@ function walk() {
         battle()
 
     }
-// --------------------------------------------------------------
-// BATTLE
-// --------------------------------------------------------------
-function battle() {
-    var battle = ask.keyInSelect(battleOptions, 'Choose your action')
-    if (battle === 0) {
-         enemyIndex.hp = enemyIndex.hp - characterChoice.attack()
-         characterChoice.hp = characterChoice.hp - enemyIndex.attack()
-    }
-    console.log(enemyIndex.hp)
-    console.log(cloud.hp)
-}
-}
-var battleOptions = ['Attack', 'Defend', "Flee"]
 
-var walkingActions = ['Walk', 'inventory', 'switch character']
+    // FLEE
+    function flee() {
+        fleeChance = Math.floor(Math.random() * 3) + 1
+        if (fleeChance === 3) {
+            console.log("You have fleed the battle! ")
+            endBattle = true
+        } else {
+            console.log("Fleeing was unsuccessful")
+        }
+
+    }
+    // --------------------------------------------------------------
+    // BATTLE
+    // --------------------------------------------------------------
+    function battle() {
+        endBattle = false
+        while (characterChoice.hp > 0 && enemyIndex.hp > 0 && endBattle === false) {
+            var battle = ask.keyInSelect(battleOptions, 'Choose your action')
+            if (battle === 0) {
+                enemyIndex.hp = enemyIndex.hp - characterChoice.attack()
+                console.log("You have inflicted " + characterChoice.attack() + " points of damage")
+                console.log(enemyIndex.name + "'s" + " hp" + " is now " + enemyIndex.hp + " points")
+                characterChoice.hp = characterChoice.hp - enemyIndex.attack()
+                console.log(enemyIndex.name + " Has inflicted " + enemyIndex.attack() + " points of damage")
+                console.log(characterChoice.name + "'s " + " hp" + " is now " + characterChoice.hp + " points")
+            }
+            if (characterChoice.hp <= 0) {
+                console.log(enemyIndex.name + " has defeated you")
+
+                endBattle = true
+            } else if (enemyIndex.hp <= 0) {
+                console.log("You have defeated " + enemyIndex.name)
+                characterChoice.exp = characterChoice.exp + enemyIndex.exp;
+                console.log(characterChoice.exp)
+                console.log("You have earned " + enemyIndex.exp + " experience points")
+                inventory.push(enemyIndex.win)
+                console.log("You received a " + enemyIndex.win)
+                endBattle = true
+            }
+            else if (battle === 1) {
+                flee()
+            }
+
+
+
+        }
+
+        // console.log(enemyIndex.hp)
+        // console.log(characterChoice.hp)
+    }
+}
+var battleOptions = ['Attack', "Flee"]
+
+var walkingActions = ['(W)alk', '(I))nventory', '(S)witch character']
 
 
 var name = ask.question("What is your name? ");
@@ -154,21 +202,27 @@ if (characterChoice === 0) {
     console.log("You have chosen " + characterChoice.name)
     // console.log(characterChoice)
 }
+console.log(characterChoice.hp)
+// while (!gameOver) {
 
-while (!gameOver) {
 
 
+while (characterChoice.hp >= 0) {
 
-    while (characterChoice.hp != 0) {
-        var nonBattleOptions = ask.keyInSelect(walkingActions, 'What action will you take? ')
-        if (nonBattleOptions === 0) {
-            walk()
-        } else if (nonBattleOptions === 1) {
-            nonBattleOptions = inventory
-        } else if (nonBattleOptions === 2) {
-            console.log('You have chosen to switch your character')
-            switchCharacter()
-        }
+    var nonBattleOptions = ask.keyIn(walkingActions, 'What action will you take? ')
+    if (nonBattleOptions === 'w') {
+        walk()
+        // if(gameOver === true){
+        //     break;
+        // }
+    } else if (nonBattleOptions === "i") {
+        nonBattleOptions = inventory
+    } else if (nonBattleOptions === 's') {
+        console.log('You have chosen to switch your character')
+        switchCharacter()
+    }
+    if (gameOver === true) {
+        break;
     }
 }
-console.log(walk())
+// }
