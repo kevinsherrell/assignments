@@ -1,0 +1,101 @@
+{
+    "title": "JSON's Deli",
+    "menu": {
+        "appetizers": [
+            {
+                "name": "Italian Rollup",
+                "ingredients": [
+                    "turkey slices",
+                    "mozzarella",
+                    "sliced bell peppers"
+                ]
+            },
+            {
+                "name": "Shrimp Roll",
+                "ingredients": [
+                    "Shrimp",
+                    "Roll"
+                ]
+            },
+            {
+                "name": "Bread Rolls",
+                "ingredients": [
+                    "Bread",
+                    "Roll"
+                ]
+            }
+        ],
+        "cold sandwiches": [
+            {
+                "name": "Original Roast Beef",
+                "ingredients": [
+                    "Italian Bread",
+                    "Roast Beef",
+                    "Mayonaise"
+                ]
+            },
+            {
+                "name": "Perfect Italian",
+                "ingredients": [
+                    "Italian Bread",
+                    "Salami",
+                    "Capicola",
+                    "Provolone",
+                    "Onion",
+                    "Lettuce",
+                    "Tomato",
+                    "Oil",
+                    "Vinegar"
+                ]
+            }
+        ],
+        "desserts": [
+            {
+                "name": "Chocolate Chip Cookie",
+                "ingredients": [
+                    "Chocolate",
+                    "Chip",
+                    "Cookies"
+                ]
+            },
+            {
+                "name": "Macademia Cookies",
+                "ingredients": [
+                    "Macademia",
+                    "Cookies"
+                ]
+            },
+            {
+                "name": "Peanut Butter Cookies",
+                "ingredients": [
+                    "Peanut",
+                    "Butter",
+                    "Cookies"
+                ]
+            }
+        ],
+        "drinks": [
+            {
+                "name": "Pepsi",
+                "ingredients": [
+                    "Soda",
+                    "Flavor"
+                ]
+            },
+            {
+                "name": "Coke",
+                "ingredients": [
+                    "Soda",
+                    "Flavo"
+                ]
+            },
+            {
+                "name": "Mountain Dew",
+                "ingredients": [
+                    "Mountain",
+                    "Dew"
+                ]
+            }
+        ]
+    }
+}
