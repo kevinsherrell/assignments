@@ -6,7 +6,9 @@ var gameOver = false
 var endBattle = false
 
 var inventory = []
-
+function openInventory(){
+    inventoryChoices = ask.keyInSelect(inventory, "Which item would you like to use?")
+}
 // --------------------------------------------------------------
 // WEAPONS
 // --------------------------------------------------------------
@@ -48,7 +50,7 @@ function Character(cName, level, hp, exp, weapon, armor, inventory) {
     this.exp = exp
     this.weapon = weapon
     this.armor = armor
-    this.inventoruy = inventory
+    this.inventory = inventory
 }
 Character.prototype.attack = function () {
     var damage = (this.weapon.attack / 100) * Math.floor(Math.random() * 33) + 1
@@ -216,7 +218,7 @@ while (characterChoice.hp >= 0) {
         //     break;
         // }
     } else if (nonBattleOptions === "i") {
-        nonBattleOptions = inventory
+        nonBattleOptions = openInventory()
     } else if (nonBattleOptions === 's') {
         console.log('You have chosen to switch your character')
         switchCharacter()

@@ -40,15 +40,16 @@
 
 // Make a function that takes two arrays and returns a single array of the items from the arrays added alternatingly.
 
-arr1 = ["a", "b", "c"]
-arr2 = [1, 2, 3]
-let combineArrays = function () {
-    let arr3 = arr1.concat(arr2)
-    let resultArr = []
-    for (let i = 0; i < arr3.length; i++) {
-        resultArr.push(arr1[i])
-        resultArr.push(arr2[i])
-  }
-    return resultArr.join("").split("")
-}
-console.log(combineArrays())
+// arr1 = ["a", "b", "c","d","f","g"]
+// arr2 = [1, 2, 3]
+// let combineArrays = function () {
+//     let arr3 = arr1.concat(arr2)
+//     let resultArr = []
+//     for (let i = 0; i < arr3.length; i++) {
+//         resultArr.push(arr1[i])
+//         resultArr.push(arr2[i])
+//   }
+//     return resultArr.join("").split("")
+// }
+// console.log(combineArrays())
+
