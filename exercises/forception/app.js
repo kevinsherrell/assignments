@@ -17,6 +17,8 @@ function forception(people, alphabet) {
     }
     return resultArr
 }
+console.time()
 console.log(forception(peopleArr, alphabetArr))
+console.timeEnd()
 
 
