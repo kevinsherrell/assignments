@@ -47,10 +47,18 @@ travel.addEventListener('submit', function (event) {
     event.preventDefault()
     let person1 = new Person(firstName.value, lastName.value, age.value, gender.value, dietary, travelLocation.value)
     let checked = []
-    for(i=0; i<person1.dietary.length; i++){
-        if(person1.dietary[i].checked){
+    for (i = 0; i < person1.dietary.length; i++) {
+        if (person1.dietary[i].checked) {
             checked.push(person1.dietary[i].value)
         }
     }
-    alert("First Name: " + firstName.value + '\n' + "Last Name:  " + lastName.value + "\n" + "Age: " + age.value + "\nGender: " + gender.value + "\nDietary Restrictions: " + checked + "\n" + "Travel Location: " + travelLocation.value)
+    
+    alert(` 
+            First Name:           ${firstName.value}
+            Last  Name:           ${lastName.value}
+            Age:                  ${age.value}
+            Gender:               ${gender.value}
+            Dietary Restrictions: ${checked}
+            Travel  Location:     ${travelLocation.value}
+        `)
 })
