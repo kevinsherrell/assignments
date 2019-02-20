@@ -2,11 +2,11 @@ import React from 'react'
 
 function Nav(){
     return (
-        <Nav>
+        <nav>
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
-        </Nav>
+        </nav>
     )
 }
 
