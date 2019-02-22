@@ -1,0 +1,74 @@
+nav {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.205);
+}
+
+.navOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1.5rem 0 1.5rem 0;
+    height: 68px;
+}
+.navTwo a {
+    margin-right: 13px;
+    margin-left: 15px;
+    /* padding-left: 30px; */
+    transition: all ease-in 300ms;
+    color: RGB(126, 128, 127);
+}
+
+.navTwo a:hover {
+    color: RGBA(34, 102, 91, .9);
+    padding-bottom: 3px;
+    border-bottom: 2px solid RGBA(34, 102, 91, .9);
+}
+
+.arrow {
+    font-size: .8rem;
+    /* margin-left: 1px; */
+}
+
+.navBarLeft {
+    margin-left: 25px;
+}
+
+.navBarLeft a {
+    margin-right: 20px;
+}
+
+.navBarLeft a:hover {
+    color: RGBA(34, 102, 91, .9);
+}
+
+.navBarRight {
+    margin-right: 25px;
+}
+
+.navBarRight a:hover {
+    color: RGBA(34, 102, 91, .9);
+}
+
+.navBarRight a {
+    margin-left: 20px;
+    float: right;
+}
+
+.navBarRight span {
+    margin-left: 15px;
+}
+
+.navLink {
+    font-weight: 100;
+    font-size: .9rem;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logoImage {
+    width: 180px;
+}
+
+li span {
+    margin-left: 15px;
+}

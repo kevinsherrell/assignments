@@ -1,0 +1,157 @@
+
+sub {
+    font-weight: 100;
+    color: grey;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+.navTwo {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    padding: 20px 0 20px 0;
+    height: 60px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+
+/* MAIN SECTION 1 */
+
+.mainSec1container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    margin-top: 20px;
+    /* border-bottom: 1px solid rgba(38, 12, 12, 0.1); */
+}
+
+/* .sectionOneInnerContainer{
+    margin-bottom: 20px;
+} */
+
+.sectionOneBottomBorder {
+    border-bottom: 1px solid rgba(38, 12, 12, 0.1);
+    padding-bottom: 67px;
+}
+
+.featuredProjectContainer {
+    /* margin-right: 20px; */
+    width: 100%;
+}
+
+.featuredProject {
+    /* background-color: pink; */
+    padding-right: 10px;
+    border-right: 1px solid rgba(38, 12, 12, 0.1);
+}
+
+.featuredProjectHeader,
+.recommendedHeader {
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.featuredImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.imageBottom {
+    height: 12px;
+    background-color: RGBA(34, 102, 91, 1);
+}
+
+.featuredHeadline {
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.featuredHeadline a:hover {
+    color: RGBA(34, 102, 91, .9);
+    text-decoration: underline;
+}
+
+.featuredDescription {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+}
+
+.author {
+    margin-top: 32px;
+    font-size: .7rem;
+    font-weight: 100;
+}
+
+.recommendedContainer {
+    padding-left: 15px;
+}
+
+.recommendedRow {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    /* height: 100px; */
+    border-bottom: 1px solid rgba(38, 12, 12, 0.1);
+}
+
+.recommendedLeft {
+    margin-right: 20px;
+}
+
+.recommendedRight {
+    padding-top: 55px;
+    text-align: right;
+    opacity: .26;
+}
+
+.placeHolder {
+    width: 100px;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.recommendedTitleLink {
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.recommendedFunded p {
+    font-size: .85rem;
+    margin-top: 7px;
+    color: RGB(37, 100, 89);
+}
+
+.recommendedTitleLinkRowTwo {
+    padding-top: 20px;
+}
+
+.recommendedTitleLinkRowThree {
+    padding-top: 10px;
+}
+
+.moreProjects {
+    padding-top: 30px;
+}
+
+.moreProjects a {
+    color: blue;
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.moreProjects a:hover {
+    text-decoration: underline;
+}
