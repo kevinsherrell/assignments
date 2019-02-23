@@ -1,6 +1,7 @@
 import React from 'react'
 import Box from './Box'
 
+
 function App(){
     return (
         <div className="container">
@@ -13,7 +14,7 @@ function App(){
             <Box title="Box 7" subTitle="The seventh box" information="blah" backgroundColor="green" />
             <Box title="Box 8" subTitle="The eighth box" information="blah" backgroundColor="beige" />
             <Box title="Box 9" subTitle="The ninth box" information="blah" backgroundColor="brown" />
-            <Box title="Box 10" subTitle="The tenth box" information="blah" backgroundColor="black" />
+            <Box className="last" title="Box 10" subTitle="The tenth box" information="blah" backgroundColor="black" />
         </div>
     )
 }
