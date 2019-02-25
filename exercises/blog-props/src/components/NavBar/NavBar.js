@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import './components/NavBar/NavBar.css'
 
 
 class NavBar extends Component {
     render() {
         return (
-
             <nav>
-                <ul>
-                    <li>START BOOTSTRAP</li>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>SAMPLE POST</li>
-                    <li>CONTACT</li>
-                </ul>
+                <div className="container">
+                    <p className="brand leftFloat"><a href="#" className="navLink">Start Bootstrap</a></p>
+                    <ul className="navMenu rightFloat">
+                        <li className="mobileButton"><button><strong>MENU</strong> <i className="fas fa-bars mobileHamburger"></i></button></li>
+                        <li className="menuItem"><a href="#" className="navLink">HOME</a></li>
+                        <li className="menuItem"><a href="#" className="navLink">ABOUT</a></li>
+                        <li className="menuItem"><a href="#" className="navLink">SAMPLE POST</a></li>
+                        <li className="menuItem"><a href="#" className="navLink">CONTACT</a></li>
+                    </ul>
+                </div>
             </nav>
-
         );
     }
 }

@@ -1,0 +1,50 @@
+.mainSection {
+    padding-top: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid RGBA(229, 229, 229, 1);
+}
+
+.mainSection a {
+    color: #202328;
+}
+
+.mainSection a:hover {
+    color: #0285a1;
+}
+
+.sectionHeader {
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.sectionSubHeader {
+    font-weight: 300;
+    font-size: 1.3rem;
+    /* padding-top: 1px; */
+}
+
+.sectionPostedBy {
+    font-weight: 400;
+    /* font-style: italic; */
+    font-size: .9rem;
+    font-family: 'Lora', serif;
+    color: #878e94;
+}
+
+.sectionPostedBy span {
+    font-family: 'Lora', serif;
+    color: black;
+}
+
+.olderPosts {
+    text-align: right;
+    padding: 10px 0;
+}
+
+.olderPostsButton {
+    padding: 12px 0;
+    width: 9rem;
+    color: white;
+    font-weight: 800;
+    background-color: #0285a1;
+}

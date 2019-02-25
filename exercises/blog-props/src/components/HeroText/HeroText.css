@@ -1,0 +1,19 @@
+.heroText {
+    text-align: center;
+    padding: 110px 0;
+}
+
+.heroText h1 {
+    font-weight: 800;
+    font-size: 2.6rem;
+}
+
+.heroText h3 {
+    font-weight: 200;
+}
+
+@media only screen and (min-width: 600px) {
+    .heroText h1 {
+        font-size: 4rem;
+    }
+}

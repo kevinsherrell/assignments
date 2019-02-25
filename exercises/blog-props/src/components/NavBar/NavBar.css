@@ -1,0 +1,60 @@
+nav {
+    background-color: white;
+    color: black;
+    height: 46px;
+    padding: 8px 0 8px 0;
+    transition: all ease-in 150ms;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.brand {
+    font-weight: 800;
+    padding: 5px 0;
+    color: #353a40
+}
+
+.mobileButton {
+    float: right;
+}
+
+.mobileButton button {
+    font-weight: 800;
+    font-size: .6rem;
+    width: 4rem;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.mobileHamburger {
+    font-size: .5rem;
+}
+
+.menuItem {
+    display: none;
+}
+
+.navLink {
+    color: inherit;
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
+        background-color: transparent;
+    }
+    .brand {
+        color: white;
+    }
+    .menuItem {
+        display: inline-block;
+        color: white;
+        margin-left: 30px;
+        font-size: .6rem;
+        font-weight: 800;
+    }
+    .mobileButton {
+        display: none;
+    }
+}

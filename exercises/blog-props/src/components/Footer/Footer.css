@@ -1,0 +1,33 @@
+footer {
+    text-align: center;
+    border-top: 1px solid RGBA(229, 229, 229, 1);
+}
+
+.footerContent {
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+
+.fa-stack a {
+    color: black;
+    transition: all ease-in 200ms;
+}
+
+.fa-stack a:hover {
+    color: #0285a1;
+}
+
+.fa-stack {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+.copyright {
+    font-size: 11px;
+    padding-top: 15px;
+    color: #6e757b;
+}
+
+/* @media only screen and (min-width: 600px){
+  
+} */
