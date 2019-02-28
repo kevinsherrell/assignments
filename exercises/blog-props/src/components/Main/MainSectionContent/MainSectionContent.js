@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './MainSectionContent.css'
+// import './MainSectionContent.css'
 
 
 class MainSectionContent extends Component {
