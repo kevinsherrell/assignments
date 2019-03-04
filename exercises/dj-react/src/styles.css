@@ -1,0 +1,48 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.boxOne{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: red;
+    height: 300px;
+}
+.boxOneTop,
+.boxOneBottom{
+    background-color: inherit;
+}
+
+.boxTwo{
+    display: grid;
+    background-color: black;
+    height: 300px;
+}
+.boxTwoTop,
+.boxTwoBottom{
+    background-color: inherit;
+}
+.boxThree{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: green;
+}
+.boxThreeTop,
+.boxThreeBottom{
+    background-color: inherit;
+}
+.boxFour{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: grey;
+}
+.boxFourTop,
+.boxFourBottom{
+    background-color: inherit;
+}
+button{
+    display: block;
+    /* width: 20rem; */
+    padding: 14px;
+}

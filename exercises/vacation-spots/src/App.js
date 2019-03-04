@@ -26,17 +26,6 @@ const App = () => {
   }
 ]
     let mappedVacationSpots = vacationSpots.map((spot, i)=>{
-        // console.log(spot)
-
-        // const fall = ()=>{
-        //     backgroundColor: 'orange'
-        // }
-        // const spring = ()=>{
-        //     backgroundColor: 'pink'
-        // }
-        // const winter = ()=>{
-        //     backgroundColor: 'red'
-        // }
         return (
         <Spots 
         style={spot.timeToGo === "Fall" ? {backgroundColor: 'brown', color: 'white'} : spot.timeToGo === "Winter" ? {backgroundColor: 'red' ,color: 'white'}: spot.timeToGo === "Spring" ? {backgroundColor: 'orange', color: 'white'}: spot.timeToGo ==="Summer" ? {backgroundColor: 'green', color: 'white'}: null} 
@@ -50,7 +39,7 @@ const App = () => {
         <div>
             {mappedVacationSpots}
         </div>
-    )
+    ) 
 }
 
 export default App
