@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
+import Header from './Header'
+import Controls from './Controls'
+import Input from './Input'
+import Names from './Names'
 
-class App extends Component{
-    render(){
-        return(
+class App extends Component {
+    constructor() {
+        super()
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
             <div>
-                <h1></h1>
-                <input type="text"/>
-                <button></button>
-                <ol></ol>
+                <Input />
+                <Controls />
+                <Header />
+                <Names />
             </div>
         )
     }
