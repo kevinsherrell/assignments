@@ -1,12 +1,13 @@
 {
   "name": "css-zen-garden",
   "version": "1.0.0",
-  "description": "CSS Practice",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch scss -o css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
