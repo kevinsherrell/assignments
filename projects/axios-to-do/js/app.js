@@ -28,8 +28,8 @@ let toDoList = todos => {
     isCompleted.id = "isCompleted";
 
     postContainer.appendChild(isCompleted);
-    
-    // PUT
+
+// PUT
     isCompleted.addEventListener("change", e => {
       id = e.target.parentNode.id;
       let completeToggle = isCompleted.checked;
@@ -65,7 +65,7 @@ let toDoList = todos => {
       completed: completed
     };
 
-    // DELETE
+// DELETE
     postDelete.addEventListener("click", deletePost);
 
     postHeader.textContent = todo.title;
