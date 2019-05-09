@@ -1,4 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400i,700");
+@font-face {
+  font-family: "symbols";
+  src: url("/verdemoderna.woff");
+}
 * {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+p {
+  font-size: 13.44px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 26.88px;
+  padding-top: 20px;
+}
+a {
+  color: inherit;
+}
+h1,
+h2,
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 20px;
+  padding-top: 50px;
+}
+/* header,
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+  padding-bottom: 45px;
+} */
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+header:before{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100vw;
+    background-color: RGB(21, 70, 74);
+}
+header{
+    color: white;
+    text-align: center;
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png),url(http://www.csszengarden.com/214/gridlines-opaque.png),url(http://www.csszengarden.com/214/huntington.jpg);
+    grid-area: 0;
+    background-size: auto;
+}
+header h1:before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/enso.svg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+header h1{
+    font-size: 200%;
+}
+header h3{
+    font-size: 17px;
+    font-family: 'Libre Baskerville';
+    margin-bottom: 30px;
+}
+header a {
+  display: block;
+  /* padding: 25px 0; */
+  font-size: 16px;
+  background-color: rgba(255,255,255,.3);
+}
+header h3 {
+  padding: 0;
+}
+ .arrowLeft,
+.arrowRight {
+  width: 20%;
+  font-family: 'symbols';
+  font-size: 44px;
+  padding: 15px 0;
+}
+.view {
+    /* align-self: center; */
+    padding: 30px 0;
+  text-align: center;
+  width: 60%;
+  font-family: 'Julius Sans One'
+}
+.author {
+  line-height: 45px;
+  padding-bottom: 50px;
+}
+.section2 {
+  grid-row-start: 5;
+}
+.section2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.section2 li {
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+}
+.section2 p {
+  padding-left: 15%;
+  font-size: 17px;
+  font-family: "Julius Sans One";
+}
+.section2 span {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+}
+/* .section3{
+    background-image: url('/bamboo.png');
+    background-attachment: fixed;
+} */
+.section4 {
+  grid-row-start: 6;
+}
+.section4 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section4 li {
+  display: block;
+  width: 50%;
+  border-bottom: solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+.section4 a {
+  padding-left: 15%;
+  font-size: 17px;
+  font-family: "Julius Sans One";
+}
+.section3,
+.section4 {
+  background-color: rgba(138, 188, 159, 0.5);
+  background-image: url('/bamboo.png');
+    background-attachment: fixed;
+}
+.section5 {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 50px;
+  background-image: url('/koi.jpg');
+  color: white;
+}
+.author span{
+    color: rgba(255,255,255,.3);
+    font-style: italic;
+}
+.social {
+  background-color: rgb(19, 67, 71);
+  font-family: "symbols";
+  font-size: 45px;
+  padding: 35px 0;
+}
+.social span {
+  /* filter: invert(100%); */
+  margin: 5%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1132px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    grid-column: span 2;
+  }
+  .section2 {
+    grid-row-start: initial;
+  }
+  .section4 {
+    grid-row-start: initial;
+  }
+  .section4 li,
+  .section2 li {
+    width: 100%;
+  }
+  .section5 {
+    grid-column: span 2;
+  }
+  .requirementsSecondHalf{
+      background-color: green;
+      min-height: 50px;;
+  }
+
+}
