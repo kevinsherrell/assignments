@@ -176,19 +176,29 @@ header h3 {
   display: grid;
   grid-template-columns: 1fr;
 }
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 @media only screen and (min-width: 1132px) {
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   header {
+      display: inline-block;
+      align-self: center;
     grid-column: span 2;
   }
+  .nav{
+      display: inline-block;
+      width: 30%;
+      height: 30%;
+      align-self: center;
+      margin-left: auto;
+      padding-bottom: 100px;
+      display: flex;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  }
+ 
   .section2 {
     grid-row-start: initial;
   }
@@ -198,12 +208,26 @@ header h3 {
   .section4 li,
   .section2 li {
     width: 100%;
+    border:  none;
+  }
+  .section2{
+      background-color: RGB(228, 237, 232);
+  }
+  .section2 li:after,
+  .section4 li:after{
+      content:'';
+      display: block;
+      height: 1px;
+      width: 50%;
+      /* margin: 0 auto; */
+      margin-left: 15%;  
+      border-bottom: 1px solid rgba(0,0,0,.3);
   }
   .section5 {
     grid-column: span 2;
   }
   .requirementsSecondHalf{
-      background-color: green;
+      background-color: RGB(228, 237, 232);
       min-height: 50px;;
   }
 
