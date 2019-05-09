@@ -1,0 +1,19 @@
+img{
+    width: 150px;
+    height: auto;
+}
+.postContainer{
+    background-color: green;
+    display: inline-block;
+    min-height: 113.88px;
+    min-width: 100px;
+    margin-right: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+.postContainer button{
+    display: block;
+}
+.strike{
+    text-decoration: line-through;
+}

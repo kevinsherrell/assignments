@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-    <p id="data"></p>
+  <body>
+    <div id="root">
+      <form name="createPost" action="" class="createPost">
+        <div>
+          <label for="title">Title: </label>
+
+          <input name="title" type="text" id="title" />
+        </div>
+        <div>
+          <label for="description">Description: </label>
+          <input name="description" type="text" id="description" />
+        </div>
+        <div>
+          <label for="price">Price: </label>
+          <input name="price" type="number" id="price" />
+        </div>
+        <div>
+          <label for="completed">Completed: </label>
+          <input
+            name="completed"
+            type="checkbox"
+            id="completed"
+            value="completed"
+          />
+        </div>
+        <div>
+          <label for="image">imageUrl: </label>
+          <input name="image" type="text" id="image" />
+        </div>
+        <button id="createPostSubmit">Submit</button>
+      </form>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>
