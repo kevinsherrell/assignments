@@ -1,26 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
+import TopStory from './TopStory'
+import {withData} from './context/dataProvider'
+import axios from 'axios'
 
-const FrontPageNews = (props) => {
-    // console.log(props)
-    const frontPageMultiMedia = { ...props.multimedia[4] }
-    // console.log(frontPageMultiMedia)
-    return (
-        <div className='frontPageNews'>
-           
-            <div>
-                <img className="frontPageImage" src={frontPageMultiMedia.url} alt="" />
-                <sub className='imageCopyright container'>{frontPageMultiMedia.copyright}</sub>
-            </div>
+const apiKey = "f9cdUfhLfBKNlN0arcby30dbeQ7LnXUI";
 
-            <div className='container'>
-                <a href={props.url} target='blank'>
-                    <h3 className='frontPageHeadline'>{props.title}</h3>
-                    <p className='abstract'>{props.abstract}</p>
-                    <sub>{props.byline}</sub>
-                </a>
-            </div>
-        </div>
-    );
+class FrontPageNews extends Component {
+    state = { 
+        frontPageNews: []
+     }
+    componentDidMount() {
+        axios
+          .get(
+            `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`
+          )
+          .then(response => {
+            this.setState({
+              frontPageNews: response.data.results
+            });
+         
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+    
+    render() { 
+        console.log(this.state)
+        const frontPage = {...this.state.frontPageNews}
+        console.log(frontPage)
+        const mappedFrontPage = this.state.frontPageNews.map((article, key) => {
+           return <TopStory {...article}/>
+          });
+        // const frontPageMap = this.props.frontPageNews.map((article,i)=>{
+        //     console.log(article)
+        // })
+        return ( 
+            <React.Fragment>
+                {mappedFrontPage}
+            </React.Fragment>
+         );
+    }
 }
+ 
 
-export default FrontPageNews;
+export default withData(FrontPageNews);

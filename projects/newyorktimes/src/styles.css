@@ -16,7 +16,9 @@
 }
 
 /* Header */
-
+header{
+    margin-bottom: 30px;
+}
 /* Top Nav */
 
 .navTop {
