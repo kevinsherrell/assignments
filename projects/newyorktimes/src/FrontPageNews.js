@@ -3,7 +3,7 @@ import TopStory from './TopStory'
 import {withData} from './context/dataProvider'
 import axios from 'axios'
 
-const apiKey = "f9cdUfhLfBKNlN0arcby30dbeQ7LnXUI";
+const apiKey = process.env.API_KEY;
 
 class FrontPageNews extends Component {
     state = { 
@@ -26,19 +26,16 @@ class FrontPageNews extends Component {
       }
     
     render() { 
-        console.log(this.state)
-        const frontPage = {...this.state.frontPageNews}
-        console.log(frontPage)
+        // console.log(this.state)
+        // console.log(frontPage)
         const mappedFrontPage = this.state.frontPageNews.map((article, key) => {
-           return <TopStory {...article}/>
+           return <TopStory {...article} key={article.url}/>
           });
-        // const frontPageMap = this.props.frontPageNews.map((article,i)=>{
-        //     console.log(article)
-        // })
+     
         return ( 
-            <React.Fragment>
+            <div className='newsGrid'>
                 {mappedFrontPage}
-            </React.Fragment>
+            </div>
          );
     }
 }

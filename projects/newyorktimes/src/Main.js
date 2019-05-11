@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom'
-import TopStory from './TopStory'
 import FrontPageNews from './FrontPageNews'
 import Results from './Results'
 

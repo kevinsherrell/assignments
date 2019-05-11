@@ -1,30 +1,27 @@
-import React from 'react';
+import React from "react";
 
-const Articles = (props) => {
-    const bgImage = `url('${props.multimedia.length && [props.web_url.slice(0, 24), props.multimedia[0].url].join('')}')`
-
-    // // const hide = {
-    // //     display: 'none'
-    // // }
-    // console.log(props.multimedia)
-    // console.log()
-    //{props.multimedia.length ? "articleBackground" : "hide"} 
-    return (
-        <div>
-            {/* <img src={props.multimedia.length && [props.web_url.slice(0, 24), props.multimedia[0].url].join('')} alt="" /> */}
-            <h2 className='headline'>{props.headline.main}</h2>
-            <div style={{ backgroundImage: props.multimedia.length && bgImage, height: !props.multimedia.length && `auto` }} className='articleBackground'>
-                <div className='leadParagraph'>
-                    <p className="leadParagraphText">{props.lead_paragraph}<span><a className='fullStoryLink' href={props.web_url}>Full Story Here</a></span></p>
-                    {props.byline.original ? <p>{props.byline.original}</p> : <p>{props.source}</p>}
-                </div>
-
-            </div>
-
-
-
+const Articles = props => {
+  const bgImage = `url('${props.multimedia.length &&
+    [props.web_url.slice(0, 24), props.multimedia[0].url].join("")}')`;
+ 
+  return (
+    <div style={{alignSelf: `${!props.multimedia.length && 'start'}`}} className="frontPageNews">
+      <div className="container">
+        <div style={{backgroundImage: bgImage, padding: `${!props.multimedia.length ? '0': '50%'}`}} className='imageContainer'>
+        
         </div>
-    );
-}
+
+        <a href={props.web_url} target="blank">
+            <h3 style={{fontSize: `${!props.multimedia.length && '40px'}`}} className="frontPageHeadline">{props.headline.main}</h3>
+            <p className="abstract">{props.abstract}</p>
+          </a>
+          <p className='author'>this.{props.byline.original}</p>
+      </div>
+      
+
+     
+    </div>
+  );
+};
 
 export default Articles;

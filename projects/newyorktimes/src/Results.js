@@ -13,12 +13,12 @@ class Results extends Component {
   }
   render() {
     const mappedResults = this.props.searchResults.map((result, i) => {
-      return <ArticleContainer {...result} key={result._id} />;
-    });
+      return <ArticleContainer {...result} key={result._id} />
+    })
     return(
-      <React.Fragment>
-      { mappedResults };
-      </React.Fragment>
+      <div className='newsGrid'>
+      { mappedResults }
+      </div>
     )
   }
 }

@@ -3,7 +3,7 @@ import axios from "axios";
 import { withRouter } from "react-router-dom";
 
 const DataContext = React.createContext();
-const apiKey = "f9cdUfhLfBKNlN0arcby30dbeQ7LnXUI";
+const apiKey = process.env.API_KEY;
 
 class DataProvider extends Component {
   state = {
@@ -13,14 +13,12 @@ class DataProvider extends Component {
 
   getArticle = (searchInput) => {
  
-    // const searchInput = event.target.elements.articleSearch.value;
 
     axios
       .get(
         `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchInput}&api-key=${apiKey}`
       )
       .then(response => {
-        console.log(response);
         this.setState({
           searchResults: response.data.response.docs
         });
